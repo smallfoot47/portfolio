@@ -41,10 +41,14 @@
         }
 
         .name {
-            text-align: center;
+            color: #fff;
+            text-align: left;
         }
 
         .txt {
+            .keyword {
+                color: #00ff00;
+            }
             color: #fff;
             font-size: large;
         }
@@ -66,12 +70,13 @@
 </head>
 
 <body>
-<h1 class="name">
-    Vivek Radhakrishnan
-</h1>
-<h3 class="name">
-    Cybersecurity Engineer
-</h3>
+    <span class="prompt">pages/about></span> <span class="output">whoami</span>
+        <h1 class="name">
+            Vivek Radhakrishnan
+        </h1>
+        <h3 class="name">
+            Cybersecurity Engineer
+        </h3>
 <pre>
     <span class="prompt">pages/about></span> <span class="output">ls</span> <span class="identifier">../pages/*</span>
         <a href="https://smallfoot47.github.io/portfolio/index">../pages/about</a> <i class="fas fa-arrow-left"></i> <span class="where-am-i"><b>you are here</b></span>
@@ -81,7 +86,10 @@
 <pre>
     <span class="prompt">pages/about></span> <span class="output">cat</span> <span class="identifier">about.txt</span>
     <p class="txt">
-
+        Hey there! My name is <span class="keyword">Vivek Radhakrishnan</span>, alias <span class="keyword">smallfoot</span>.
+        I am a <span class="keyword">Cybersecurity Engineer</span> with a passion for <span class="keyword">Digital Forensics</span> and <span class="keyword">Reverse Engineering</span>.
+        I love solving software problems and making tools to automate my solutions!
+        You can reach me through the links posted below.
     </p>
 </pre>
 <!-- Add more sections for different commands or output as needed -->
