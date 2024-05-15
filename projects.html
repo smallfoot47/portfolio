@@ -156,5 +156,20 @@
         <a href="mailto:smallfoot@osiris.cyber.nyu.edu" target="_blank" rel="noopener noreferrer">../socials/gmail <i class="far fa-envelope"></i></a>
 </pre>
 <span class="sauce">Easier than inspect element: <a href="https://github.com/smallfoot47/portfolio">source code for this website</a></span>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const sauce = document.querySelector('.sauce');
+
+        const bottomSauce = sauce.getBoundingClientRect().bottom;
+
+        const bottomViewport = window.innerHeight;
+
+        const bottomPosition = bottomSauce > bottomViewport ? 'relative' : 'absolute';
+        
+        sauce.style.position = bottomPosition;
+        span.style.display = 'block';
+    });
+</script>
 </footer>
 </html>
