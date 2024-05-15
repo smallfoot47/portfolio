@@ -45,6 +45,28 @@
             text-align: left;
         }
 
+        .project {
+            .title {
+                color: #d8e7d8;
+                font-size: large;
+                text-align: left;
+            }
+            .duration {
+                position: absolute;
+                left: 75%;
+                transform: translateX(-50%);
+                color: #fff;
+            }
+            .description {
+                color: #cdf387;
+                text-align: left;
+            }
+            .technology {
+                color: #5d9cc0;
+                text-align: left;
+            }
+        }
+
         .linkedin-icon {
             color: #0077b5;
             font-size: 24px;
@@ -73,9 +95,52 @@
 </pre>
 <pre>
     <span class="prompt">pages/projects></span> <span class="output">cat</span> <span class="identifier">completed.txt</span>
-     :)
+    <p class="project">
+        <span class="title">FACE Pravidhi website</span> <span class="duration">NOV 2022 - DEC 2022</span>
+        <span class="description">
+            A website for an annual week-long event, maintained by FACE-ASEB.
+            Developed the backend infrastructure with capabilities for vertical scaling and intergration.
+            Wrote a custom PHP API to simplify development.
+            Currently not live.
+        </span>
+        <span class="technology">
+            <i class="fab fa-php"></i> ReactJS<i class="fab fa-react"></i> <i class="fab fa-aws"></i> mySQL
+        </span>
+    </p>
+    <p class="project">
+        <span class="title">LiRead</span> <span class="duration">JUL 2022 - AUG 2022</span>
+        <span class="description">
+            A CNN Machine Learning algorithm, utlizing computer vision techniques to parse license plate numbers from images.
+            The model boasts a 98% accuracy rate over Kaggle datasets.
+        </span>
+        <span class="technology">
+            <i class="fab fa-python"></i> OpenCV
+        </span>
+    </p>
+    <p class="project">
+        <span class="title">Simple Cloud Storage Application</span> <span class="duration">JUL 2022 - AUG 2022</span>
+        <span class="description">
+            A cloud storage service for storing simple files securely.
+            It utlizes efficient data management, safeguarding, file integrity checks, and user authentication.
+            Discontinued service.
+        </span>
+        <span class="technology">
+            ReactJS<i class="fab fa-react"></i> Firebase<i class="fab fa-google"></i>
+        </span>
+    </p>
 </pre>
-<!-- Add more sections for different commands or output as needed -->
+<pre>
+    <span class="prompt">pages/projects></span> <span class="output">cat</span> <span class="identifier">ongoing.txt</span>
+    <p class="project">
+        <span class="title">Almond 3D Game Engine</span> <span class="duration">JUN 2021 - CURRENT</span>
+        <span class="description">
+            A 3D game engine inspired by "The Cherno"'s Hazel engine. 
+        </span>
+        <span class="technology">
+            <i class="fab fa-cuttlefish">++</i> OpenGL<i class="fab fa-opengl"></i> Imgui
+        </span>
+    </p>
+</pre>
 </body>
 <footer>
 <pre>
