@@ -158,23 +158,6 @@
 </pre>
 <span class="sauce">Easier than inspect element: <a href="https://github.com/smallfoot47/portfolio">source code for this website</a></span>
 
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        const sauce = document.querySelector('.sauce');
-
-        function updateSaucePosition() {
-            const bottomSauce = sauce.getBoundingClientRect().bottom;
-            const bottomViewport = window.innerHeight;
-            const bottomPosition = bottomSauce > bottomViewport ? 'relative' : 'absolute';
-
-            sauce.style.position = bottomPosition;
-            span.style.display = 'block';
-        }
-
-        updateSaucePosition();
-
-        window.addEventListener('resize', updateSaucePosition);
-    });
-</script>
+<script src="sauce.js"></script>
 </footer>
 </html>
