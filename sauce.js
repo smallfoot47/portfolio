@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const bottomPosition = bottomSauce > bottomViewport ? 'relative' : 'absolute';
 
         sauce.style.position = bottomPosition;
-        span.style.display = 'block';
+        sauce.style.display = 'block';
     }
 
     updateSaucePosition();
